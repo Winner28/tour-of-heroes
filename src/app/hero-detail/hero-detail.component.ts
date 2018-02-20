@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Hero } from '../hero';
+import { Component, OnInit, Input } from '@angular/core';
+
 
 @Component({
   selector: 'app-hero-detail',
@@ -6,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hero-detail.component.css']
 })
 export class HeroDetailComponent implements OnInit {
+	
 
+  @Input() hero: Hero;
+  
   constructor() { }
 
   ngOnInit() {
